@@ -1,8 +1,5 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
-  <main>
-    404 tidak ditemukan
-  </main>
+  <main>404 tidak ditemukan</main>
 </template>
