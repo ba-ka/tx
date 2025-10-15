@@ -13,13 +13,25 @@ import { RouterLink, RouterView } from "vue-router";
             target="_blank"
             rel="noopener noreferrer"
             href="https://github.com/tholutakhyar"
-            >[ github ]</a
+            >[ gh ]</a
           >
           <a
             target="_blank"
             rel="noopener noreferrer"
             href="https://instagram.com/tholutakhyar"
-            >[ instagram ]</a
+            >[ ig ]</a
+          >
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.youtube.com/@tholutx"
+            >[ yt ]</a
+          >
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://x.com/tholutakhyar"
+            >[ tw / x]</a
           ></span
         >
       </h1>
