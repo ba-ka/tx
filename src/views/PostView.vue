@@ -6,12 +6,12 @@
     <div v-else-if="this.post">
       <div class="info-post">
         <span class="date-publish">
-          {{ show_date(this.post.create_at) }}
+          {{ showDate(this.post.burogu.created_at) }}
         </span>
-        <h1>{{ this.post.title }}</h1>
+        <h1>{{ this.post.burogu.title }}</h1>
       </div>
       <div class="markdown-body">
-        <Markdown :source="this.post.content" />
+        <Markdown :source="this.post.burogu.content" />
       </div>
     </div>
     <div v-else>memuat...</div>
@@ -25,6 +25,10 @@
     display: flex;
     align-items: center;
   }
+}
+
+.markdown-body {
+  text-align: justify;
 }
 </style>
 
@@ -51,14 +55,14 @@ export default {
   methods: {
     fetchData() {
       const { data, error } = useFetch(
-        "https://c.ba-ka.org/api/v1/kami?id=" + this.$route.params.id
+        "https://x.ba-ka.org/uwu/burogu/" + this.$route.params.id
       );
       this.post = data;
       this.error = error;
     },
-    show_date(value) {
+    showDate(value) {
       if (value) {
-        return moment(value).format("YYYY - MM - DD HH:mm");
+        return moment(value).format("YYYY/MM/DD HH:mm");
       }
     },
   },
