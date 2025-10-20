@@ -35,7 +35,7 @@ import { RouterLink, RouterView } from "vue-router";
           ></span
         >
       </h1>
-      <p>hanya sebuah blog kecil untuk mengetik apapun yang ingin kukektik</p>
+      <p>hanya sebuah blog kecil untuk mengetik apapun yang ingin kuketik</p>
     </header>
 
     <RouterView />
