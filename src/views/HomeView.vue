@@ -10,7 +10,7 @@ const { data, error } = useFetch("https://x.ba-ka.org/uwu/burogu?user_id=3");
     <div v-for="item in data.burogus" v-bind:key="item.id">
       <RouterLink :to="{ name: 'x', params: { id: item.id } }"
         ><h3>
-          {{ item.title }} <span>[{{ showDate(item.created_at) }}]</span>
+          <span>[{{ showDate(item.created_at) }}]</span> {{ item.title }}
         </h3></RouterLink
       >
     </div>
